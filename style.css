@@ -1,6 +1,5 @@
 :root {
     --green-color: #97c0b0;
-    /* 9ebcb3 */
 }
 
 @media (max-width: 400px) {}
@@ -30,7 +29,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* border: 1px solid cyan; */
 }
 
 .navigation {
@@ -38,43 +36,39 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0px 50px 0px;
+    padding: 1.5vw 0 2.5vw 0; /* ?? */
 }
 
 .logo {
-    width: 193px;
+    width: 9.65vw; /* 193px; */
 }
-
-/* .navigation-links {}
-
-.personal-links {} */
 
 .navigation-link, .personal-link, .h3-link-up, .h3-link-down, .arrow-left, .arrow-right {
     display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 12pt;
+    font-size: 0.9vw; /* 12pt; */
     text-transform: uppercase;
     font-weight: 300;
     transition: .2s ease-out;
 }
 
 .navigation-link {
-    padding-right: 20px;
+    padding-right: 1vw; /* 20px */;
 }
 
 .personal-link {
-    padding-left: 20px;
+    padding-left: 1vw; /* 20px */
 }
 
 .h3-link-up, .h3-link-down {
-    font-size: 9pt;
+    font-size: 0.6vw; /* 9pt; */
     position: relative;
-    top: -4px;
+    top: -0.25vw; /* -4px; */
 }
 
 .h3-link-up {
-    padding-left: 10px;
+    padding-left: 0.5vw; /* 10px; */
 }
 
 .navigation-link:hover, .personal-link:hover, .h3-link-up:hover, .h3-link-down:hover, .arrow-left:hover, .arrow-right:hover {
@@ -82,7 +76,7 @@ body {
 }
 
 .personal-lnr {
-    padding-right: 7px;
+    padding-right: 0.45vw; /* 7px; */
 }
 
 .photo {
@@ -90,7 +84,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 90%;
-    padding-bottom: 50px;
+    padding-bottom: 2.5vw; /* 50px; */
     border-bottom: 1px solid #cccccc;
 }
 
@@ -99,7 +93,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 20px;
+    margin: 0 1vw; /* 0px 20px; */
 }
 
 .product-img {
@@ -127,8 +121,8 @@ img {
 
 .overlay {
     position: absolute;
-    top: 250px;
-    left: 850px;
+    top: 12.5vw; /* 250px; */
+    left: 42.5vw; /* 850px; */
     display: flex;
     flex-direction: column;
 }
@@ -141,13 +135,13 @@ img {
 }
 
 .title {
-    font-size: 20pt;
+    font-size: 1.4vw; /* 20pt; */
     font-weight: 500;
 }
 
 .description {
-    font-size: 14pt;
-    margin: 5px 0px;
+    font-size: 1vw; /* 14pt; */
+    margin: 0.25vw 0; /* 5px 0px; */
     font-weight: 300;
 }
 
@@ -155,13 +149,13 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 0.5vw 0; /* 10px 0px; */
 }
 
 #email {
     border: 1px solid black;
-    margin: 5px 0px;
-    padding: 20px;
+    margin: 0.25vw 0; /* 5px 0px; */
+    padding: 1vw; /* 20px; */
     background-color: transparent;    
 }
 
@@ -185,14 +179,14 @@ img {
 }
 
 #submit {
-    padding: 10px;
+    padding: 0.5vw; /* 10px; */
     border: 1px solid black;
     background-color: transparent;
     color: black;
     text-transform: uppercase;
     cursor: pointer;
-    margin: 5px 0px;
-    padding: 20px;
+    margin: 0.25vw 0; /* 5px 0px; */
+    padding: 1vw; /* 20px; */
 }
 
 #email:hover {
@@ -214,23 +208,23 @@ img {
 
 .video {
     display: block;
-    margin: 30px auto 0px auto;
+    margin: 1.5vw auto 0 auto; /* 30px auto 0px auto; */
 }
 
 #about, #offers, #shop {
-    margin: 30px;
-    padding: 50px;
+    margin: 1.5vw; /* 30px; */
+    padding: 2.5vw; /* 50px; */
     display: block;
     text-align: justify;
-    font-size: 11pt;
+    font-size: 0.8vw; /* 11pt; */
     border-bottom: 1px solid #cccccc;
 }
 
 h3 {
-    font-size: 14pt;
+    font-size: 1vw; /* 14pt; */
     text-transform: uppercase;
     font-weight: 300;
-    padding: 20px 0px;
+    padding: 1vw 0; /* 20px 0px; */
     color: black;
 }
 
@@ -241,16 +235,14 @@ h3 {
 }
 
 .single-product {
-    /* border: 1px solid green; */
-    margin: 10px 20px;
+    margin: 0.5vw 1vw; /* 10px 20px; */
     position: relative;
 }
 
 .product-overlay {
-    /* border: 1px solid cyan; */
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -258,9 +250,9 @@ h3 {
 
 .product-title, .stars {
     display: flex;
-    font-size: 12pt;
+    font-size: 0.9vw; /* 12pt; */
     font-weight: 400;
-    padding: 5px 20px;
+    padding: 0.25vw 1vw; /* 5px 20px; */
 }
 
 .product-title {
@@ -272,35 +264,34 @@ h3 {
 }
 
 .finance {
-    padding: 10px 20px 20px 20px;
+    padding: 0.5vw 1vw 1vw 1vw; /* 10px 20px 20px 20px; */
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* border: 1px solid crimson; */
 }
 
 .price {
-    font-size: 14pt;
+    font-size: 1vw; /* 14pt; */
     font-weight: 600;
 }
 
 .cart {
-    font-size: 18pt;
+    font-size: 1.2vw; /* 18pt; */
 }
 
 .contacts {
     background-color: white;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 2.5vw; /* 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer-link {
-    padding: 20px;
+    padding: 1vw; /* 20px; */
     text-decoration: none;
-    font-size: 12pt;
+    font-size: 0.9vw; /* 12pt; */
     text-transform: uppercase;
     font-weight: 300;
     color: black;
@@ -309,5 +300,12 @@ h3 {
 
 .footer-link:hover {
     color: var(--green-color);
-    transform: translateY(5px);
+    transform: translate(0.25vw); /* translateY(5px); */
 }
+
+/* convertation */
+/* 5px - 0.25vw;
+/* 10px - 0.5vw;
+/* 20px - 1vw;
+/* and so on;
+*/
