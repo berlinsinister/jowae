@@ -20,6 +20,14 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: relative;
+}
+
+.template-img {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .header {
@@ -36,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5vw 0 2.5vw 0; /* ?? */
+    padding: 1.5vw 0 2.5vw 0; /* */
 }
 
 .logo {
@@ -59,6 +67,53 @@ body {
 
 .personal-link {
     padding-left: 1vw; /* 20px */
+}
+
+#cart {
+    position: relative;
+}
+
+#cart-amount, .cart-amount-pop-up {
+    background-color: #ec0448;
+    color: white;
+    font-size: 0.7vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -0.7vw;
+    right: -1.7vw;
+    padding: 0.7vw;
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+}
+
+.scroll-div {
+    position: fixed;
+    top: 5vw;
+    right: 15vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-cart {
+    padding: 0.2vw;
+    font-size: 1vw;
+}
+
+.scroll-cart-amount {
+    background-color: #ec0448;
+    color: white;
+    font-size: 0.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7vw;
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
 }
 
 .h3-link-up, .h3-link-down {
@@ -277,6 +332,12 @@ h3 {
 
 .cart {
     font-size: 1.2vw; /* 18pt; */
+}
+
+.add-to-cart {
+    text-decoration: none;
+    color: black;
+    position: relative;
 }
 
 .contacts {

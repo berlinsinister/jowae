@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven Pro:400,500,600">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="icon" href="images/favicon/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="images/favicon/favicon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <img src="images/template/template.png" alt="template" class="template-img">
     <div class="header" id="header">
         <div class="navigation">
             <div class="navigation-links">
@@ -28,7 +29,13 @@
             <div class="personal-links">
                 <a href="#" class="personal-link"><span class="lnr personal-lnr lnr-map-marker"></span>Find Store</a>
                 <a href="#" class="personal-link"><span class="lnr personal-lnr lnr-user"></span>My Jowaé</a>
-                <a href="#" class="personal-link"><span class="lnr personal-lnr lnr-cart"></span>My Cart</a>
+                <a href="#" class="personal-link" id="cart"><span class="lnr personal-lnr lnr-cart"></span>My Cart
+                    <span id="cart-amount">0</span>
+                </a>
+                <div class="scroll-div" title="product amount in the cart">
+                    <span id="scroll-cart-amount"></span>
+                    <span id="scroll-cart"></span>
+                </div>
             </div>
         </div>
         <div class="photo">
@@ -125,7 +132,7 @@
                 </a>
             </h3>
             <div class="products">
-                <a href="#" class="arrow-left">
+                <a href="javascript:void(0);" class="arrow-left">
                     <span class="lnr lnr-chevron-left"></span>
                 </a>
                 <div class="single-product">
@@ -143,7 +150,12 @@
                         </div>
                         <div class="finance">
                             <div class="price">$24.00</div>
-                            <div class="cart"><span class="lnr lnr-cart"></span></div>
+                            <div class="cart">
+                                <a href="javascript:void(0);" class="add-to-cart">
+                                    <span class="lnr lnr-cart"></span>
+                                    <span class="pop-up"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,7 +174,12 @@
                         </div>
                         <div class="finance">
                             <div class="price">$30.00</div>
-                            <div class="cart"><span class="lnr lnr-cart"></span></div>
+                            <div class="cart">
+                                <a href="javascript:void(0);" class="add-to-cart">
+                                    <span class="lnr lnr-cart"></span>
+                                    <span class="pop-up"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,21 +198,33 @@
                         </div>
                         <div class="finance">
                             <div class="price">$28.00</div>
-                            <div class="cart"><span class="lnr lnr-cart"></span></div>
+                            <div class="cart">
+                                <a href="javascript:void(0);" class="add-to-cart">
+                                    <span class="lnr lnr-cart"></span>
+                                    <span class="pop-up"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="arrow-right">
+                <a href="javascript:void(0);" class="arrow-right">
                     <span class="lnr lnr-chevron-right"></span>
                 </a>
             </div>
         </div>
     </main>
     <footer class="contacts" id="contacts">
-        <a href="#" class="footer-link">Contact</a>
-        <a href="#" class="footer-link">Terms and Conditions</a>
-        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="javascript:void(0);" class="footer-link">Contact</a>
+        <a href="javascript:void(0);" class="footer-link">Terms and Conditions</a>
+        <a href="javascript:void(0);" class="footer-link">Privacy Policy</a>
     </footer>
+
+    <audio id="audio">
+        <source
+            src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-35448/zapsplat_multimedia_button_press_plastic_click_005_36872.mp3"
+            type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
     <script src="index.js"></script>
 
